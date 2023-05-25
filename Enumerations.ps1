@@ -4,3 +4,5 @@ get-service | ForEach-Object {
   "----------------------------"
 }
 
+1..10 | Foreach-object {Get-Random -SetSeed $_}
+
