@@ -23,4 +23,8 @@ get-service |
   export-clixml -Path e:\services.xml
 # export example for xml
 
+Get-Service -name s* | 
+  out-gridview -OutputMode Multiple -Title 'Choose some services to be stopped' | 
+  stop-service -WhatIf
+# when using stop-services ALWAYS use "-Whatif" so it doesnt actually stop services running / Can use Single vs multiple on line 27
 
