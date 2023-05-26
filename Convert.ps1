@@ -11,9 +11,10 @@ get-service |
   ConvertTo-html -NoTypeInformation |
   out-file -FilePath e:\services.html
 # html example with adding css
-$CSS @'
+# $CSS @'
 
-'@
+#'@
+
 # the "'@" allows all content (pasted css style (i.e tables) from web (w3schools.com)) to be associated with the CSS variable
 # must add "head $CSS after the "convertto-HTML line on line 11 (i.e Convertto-Html Head $CSS)"
 
