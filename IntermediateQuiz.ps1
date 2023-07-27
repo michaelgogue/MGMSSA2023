@@ -105,7 +105,7 @@ function Get-AgeInDays {
   Param ([datetime]$DateOfBirth)
   $Now = Get-Date
   $Age = $Now - $DateOfBirth
-  return $Age.Days
+  return $Age.days / 365
 }
 
-Get-AgeInDays -DateOfBirth "15-sep-1990"
+Get-AgeInDays -DateOfBirth "15-sep-1980"
